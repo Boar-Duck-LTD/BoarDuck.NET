@@ -25,6 +25,6 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Publish
-      run: dotnet publish -c "Release" -p:PublishProfile="publish"
+      run: dotnet publish "BoarDuck.NET/BoarDuck.NET.csproj" -c "Release" -p:PublishProfile="publish"
     - name: Test
       run: dotnet test --no-build --verbosity normal
