@@ -45,4 +45,4 @@ jobs:
         port: ${{ secrets.DEPLOY_REMOTE_PORT }}
         username: ${{ secrets.DEPLOY_REMOTE_USER }}
         key: ${{ secrets.DEPLOY_KEY }}
-        script: ${{ DEPLOY_RESTART_SCRIPT_COMMAND }}
+        script: ${{ secrets.DEPLOY_RESTART_SCRIPT_COMMAND }}
